@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
+/* font-family: 'IBM Plex Sans Arabic', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    font-size: 16px;
+    background-color: rgb(68, 171, 202);
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    /* background: linear-gradient(0deg, rgba(239,255,0,1) 47%, rgba(0,119,231,1) 52%); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.navbar .logo h3{
+    font-size: 3em;
+    border: 0px solid black;
+    padding: 32px 0;
+}
+
+.navbar .navbar-menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.navbar .navbar-menu ul li a{
+    font-size: 1.6rem;
+    color: black;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.navbar .navbar-menu ul li a:hover{
+    border-bottom: 3px solid;
+    color: rgba(255, 230, 0, 0.972)
+}
+
+.navbar-menu .contact {
+    border: 3px solid;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: rgb(251, 255, 0);
+}
+
+.navbar-menu .contact:hover{
+    background: transparent;
+}
