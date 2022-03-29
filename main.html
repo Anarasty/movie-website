@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/icons8-3d-glasses-50.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Movie website</title>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="logo">
-           <h3>MOVIE WEBSITE</h3>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/icons8-3d-glasses-50.png"
+            type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Movie website</title>
+    </head>
+    <body>
+        <!-- NAVIGATION MENU -->
+        <nav class="navbar">
+            <div class="logo">
+                <h3>MOVIE WEBSITE</h3>
+            </div>
+            <div class="navbar-menu">
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">IBM</a></li>
+                    <li><a href="" class="contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- SEARCH BAR -->
+        <div class="container">
+            <div class="search-container" id="search-cont">
+                <h3 class="search-text">Search for your movie </h3>
+                <form id="search-form">
+                    <input autocomplete="off" type="text" class="form-searcher" id="searchForm" placeholder="Search...">
+                    <ul class="suggestions"></ul>
+                </form>
+                <div class="search-links">
+                    <h4 class="bestFilms" id="goodFilm">&#10004; Best Films</h4>
+                    <h4 class="worstFilms" id="badFilm">&#10006; Wost Films</h4>
+                </div>
+            </div>
         </div>
-        <div class="navbar-menu">
-            <ul>
-                <li><a href="">About Us</a></li>
-                <li><a href="">IBM</a></li>
-                <li><a href="" class="contact">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
-</body>
+        
+    
+    
+    </body>
 </html>

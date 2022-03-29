@@ -10,7 +10,11 @@
 html, body {
     overflow-x: hidden;
     font-size: 16px;
-    background-color: rgb(68, 171, 202);
+    /* background-color: rgb(68, 171, 202); */
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 a {
@@ -27,8 +31,8 @@ a {
 
 .navbar .logo h3{
     font-size: 3em;
-    border: 0px solid black;
     padding: 32px 0;
+    color: rgb(255, 255, 255);
 }
 
 .navbar .navbar-menu ul{
@@ -38,7 +42,7 @@ a {
 
 .navbar .navbar-menu ul li a{
     font-size: 1.6rem;
-    color: black;
+    color: rgb(255, 255, 255);
     margin: 0 20px;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -53,9 +57,52 @@ a {
     border: 3px solid;
     border-radius: 20px;
     padding: 5px 10px;
-    background-color: rgb(251, 255, 0);
 }
 
 .navbar-menu .contact:hover{
     background: transparent;
+}
+
+.container {
+    background-color: aqua;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.container .search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .search-container .search-text{
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+form .form-searcher{
+    width: 900px;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    padding: 3px 15px;
+}
+
+form .form-searcher:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.search-links {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.search-links h4{
+    border: 3px solid;
+    padding: 10px 20px;
+    font-weight: 100;
+    border-radius: 30px;
 }
