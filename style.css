@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* font-family: 'IBM Plex Sans Arabic', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 html, body {
     overflow-x: hidden;
     font-size: 16px;
     /* background-color: rgb(68, 171, 202); */
-    background-image: url(assets/bg.jpg);
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url(assets/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -92,6 +94,24 @@ form .form-searcher:hover {
     box-shadow: 0 0 10px black;
 }
 
+#searchBTN {
+    transition: 1 ease;
+    color: white;
+    background-color: black;
+    font-size: 1.4rem;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    transition: 1 ease;
+}
+
+#searchBTN:hover {
+    transition: 1 ease;
+    color: black;
+    background-color: white;
+    transform: scale(1.1);
+}
+
 .search-links {
     display: flex;
     width: 60%;
@@ -105,4 +125,23 @@ form .form-searcher:hover {
     padding: 10px 20px;
     font-weight: 100;
     border-radius: 30px;
+}
+
+.emptyPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.emptyPage img{
+    width: 25%;
+    margin: 20px;
+}
+
+.noResultsP {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 100px;
 }
