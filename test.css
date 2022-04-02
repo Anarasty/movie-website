@@ -14,6 +14,7 @@ body {
 body {
   font-family: "Poppins", sans-serif;
   background-image: url(assets/bg.jpg);
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -117,6 +118,7 @@ header .container #searchForm .searchField::placeholder {
 }
 #main .movieSection img:hover {
   transform: scale(1.03);
+  cursor: pointer;
 }
 
 #main .movieSection .movieInfo {
@@ -126,12 +128,43 @@ header .container #searchForm .searchField::placeholder {
   font-size: 1.6rem;
   letter-spacing: 2px;
   margin: 20px auto;
+  /* background-color: aqua; */
+  width: 90%;
+}
+
+#main .movieSection .movieInfo h3 {
+  transition: all 0.5s ease;  
+}
+
+#main .movieSection .movieInfo h3:hover {
+  text-shadow: 0 5px 10px rgb(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+#main .movieSection .movieInfo h4 {
+  font-size: 1.4rem;
+  letter-spacing: 0;
+}
+
+.movieInfoContent {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 #main .movieSection .movieInfo span {
   background-color: var(--second-color);
   padding: 10px;
   border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+#main .movieSection .movieInfo span:hover {
+  background-color: rgb(255, 49, 49);
+  font-weight: 900;
+  cursor: pointer;
+  transform: translateY(-20%);
 }
 
 #main .movieSection .movieInfoMain {
@@ -153,3 +186,37 @@ header .container #searchForm .searchField::placeholder {
 .movieSection:hover .movieInfoMain{
   opacity: 1;
 } */
+
+
+/* ------------------ */
+/* ABOUT SECTION */
+/* ------------------ */
+
+.about {
+  background-color: antiquewhite;
+  width: 90%;
+  margin: 0 auto;
+}
+.about .aboutInfo {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 40px;
+}
+
+.about .aboutInfo img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.about .aboutInfo h3 {
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+.about .aboutInfo span {
+  color: rgb(255, 1, 1);
+  font-size: 1.7rem;
+}
