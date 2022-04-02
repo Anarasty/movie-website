@@ -92,16 +92,17 @@ header .container #searchForm .searchField::placeholder {
   color: rgb(255, 95, 95);
 }
 
-.main {
+#main {
   background-color: antiquewhite;
   width: 90%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.main .movieSection {
+#main .movieSection {
   margin: 60px 20px;
   width: 30%;
   display: flex;
@@ -109,11 +110,16 @@ header .container #searchForm .searchField::placeholder {
   box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
   border-radius: 30px;
 }
-.main .movieSection img {
+#main .movieSection img {
   margin: 10px auto;
   width: 70%;
+  transition: all 0.5s ease;
 }
-.main .movieSection .movieInfo {
+#main .movieSection img:hover {
+  transform: scale(1.03);
+}
+
+#main .movieSection .movieInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,14 +128,28 @@ header .container #searchForm .searchField::placeholder {
   margin: 20px auto;
 }
 
-.main .movieSection .movieInfo span {
+#main .movieSection .movieInfo span {
   background-color: var(--second-color);
   padding: 10px;
   border-radius: 20px;
 }
 
-.main .movieSection .movieInfoMain {
+#main .movieSection .movieInfoMain {
   width: 85%;
   margin: 10px auto;
   font-size: 1.2rem;
 }
+
+/* 
+.movieInfoMain {
+  position: absolute;
+  
+  bottom: 0;
+  max-width: 20%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.movieSection:hover .movieInfoMain{
+  opacity: 1;
+} */
