@@ -73,7 +73,7 @@ header .container .menuList ul li a:hover::before {
   background-color: white;
 }
 
-header .container #searchForm .searchField {
+header .container #searchForm #searchField {
   font-size: 1.5rem;
   padding: 10px 20px;
   color: black;
@@ -83,13 +83,13 @@ header .container #searchForm .searchField {
   margin: 0 20px;
 }
 
-header .container #searchForm .searchField:hover {
+header .container #searchForm #searchField:hover {
   outline: 3px solid black;
   background-color: black;
   color: white;
 }
 
-header .container #searchForm .searchField::placeholder {
+header .container #searchForm #searchField::placeholder {
   color: rgb(255, 95, 95);
 }
 
