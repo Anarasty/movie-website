@@ -40,6 +40,8 @@ function showMovie(data) {
                     <h3>${title}</h3>
                     <div class="movieInfoContent">
                         <h4>${release_date}</h4>
+                        <button>&#9733;GOOD</button>
+                        <button>&#9785;BAD</button>
                         <span>${vote_average}</span>
                     </div>
                 </div>
